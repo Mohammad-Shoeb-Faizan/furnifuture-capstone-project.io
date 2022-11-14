@@ -1,0 +1,2981 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'poppins';
+}
+
+/* HEADER SECTION CSS */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+} 
+
+header span{
+    display: flex;
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+header h3{
+    font-size: 1.7rem;
+    margin-left: 0.7rem;
+    color: rgb(46, 104, 239);
+}
+header span img{
+    height: 1.7rem;
+}
+header .serch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(242, 198, 131);
+    background: rgb(242, 198, 131);
+    width: 65%;
+    border-radius: 10px;
+    padding: 2.5px;
+    margin-top: 3vh;
+ 
+}
+header input{
+    display: flex;
+    border: none;
+    outline: none;
+    background: rgb(242, 198, 131);
+}
+header .serch:hover{
+    box-shadow: 2px 4px 4px 2px lightgray;
+    cursor: pointer;
+}
+header .serch img{
+    height: 1.3rem;  
+}
+header ul{
+    list-style: none;
+    margin-top: 4vh;
+    display: flex;
+    width: 100%;
+}
+header ul li{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+header ul li:hover{
+    cursor: pointer;
+    color: rgb(46, 104, 239);
+    background-color: rgb(242, 198, 131);
+}
+
+/* SECTION ONE CSS */
+.one .left{
+    margin-top: 3vh;
+    padding: 1rem 2rem;
+    flex-direction: column;
+
+}
+.one .left i{
+    margin-top: 1.5vh;
+    padding: 2px 7px;
+    background-color: rgb(242, 198, 131);
+    font-size: 11px; 
+}
+.one .left i:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    box-shadow: 1px 2px 2px 1px lightgray;
+}
+.one .left h3{
+    margin-top: 1.5vh;
+    color: rgb(46, 104, 239);
+    font-size: 1.5rem;
+
+}
+.one .left h1{
+    
+    color: rgb(246, 165, 44);
+    font-size: 2.7rem;
+}
+.one .left h1:hover{
+    cursor: pointer;
+    color: royalblue;
+}
+.one .left p{
+    font-weight: none;
+    font-size: 0.8rem;
+}
+.one .left ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 3vh;
+}
+.one .left ul{
+    display: flex;
+    
+}
+.one .left li img{
+    height: 2.3rem;
+    margin-right: 0.5rem;
+}
+.one .left li p{
+    font-size: 0.8rem;
+
+}
+.one .left li p:hover{
+    font-size: 1rem;
+
+}
+.one .left button{
+    margin-top: 2.5vh;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: rgb(242, 198, 131);
+    border: none;
+    font-weight: none;
+    color: white;
+
+}
+.one .left button img{
+    height: 1rem;
+    margin-left: 3px;
+}
+.one .left button:hover{
+    box-shadow: 1px 2px 2px 2px lightgrey;
+    cursor: pointer;
+    background-color: royalblue;
+}
+.one .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one .right div{
+    justify-self: center;
+    height: 350px;
+    width: 350px;
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    animation: rotate 4s ease-in infinite;
+}
+.one .right img{
+    height: 40vh;
+    width: auto;
+    display: flex;
+    position: relative;
+    pointer-events: none;
+    animation: falling 5s infinite ease-in-out;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0%deg);
+    }
+    50%{
+        transform: rotate(360%deg);
+    }
+    100%{
+        transform: rotate(0%deg);
+    }
+}
+@keyframes falling{
+    0%{
+        transform: translateY(-500%);
+    }
+    40%{
+        transform: translateY(-0%);
+    }
+    60%{
+        transform: translateY(-6%);
+    }
+    80%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-6%);
+    }
+
+}
+
+/* SECTION TWO CSS */
+.two{
+    padding: 1rem;
+
+}
+.two .top h1{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: none;
+}
+.two .top span{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-right: 1rem;
+    
+  
+}
+.two  span img{
+    height: 2rem;
+    width: 3rem;
+    color: white;
+}
+.two .top{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid   rgb(242, 198, 131);
+    background-color: rgb(242, 198, 131);
+    width: 90%;
+    margin-left: 5% ;
+    padding: 1rem;
+}
+.two .top ul{
+    list-style: none;
+}
+.two .top li img{
+    height: 15rem;
+    border: 1px solid lightgray;
+    background: white;
+    border-radius: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;    
+}
+.two .top li img:hover{
+    cursor: pointer;
+    background-color: rgb(46, 104, 239);
+}
+.two .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: 1px solid  #ecc3da;
+    background-color: #ecc3da;
+    border-radius: 25px;
+    margin-top: 2rem;
+    margin-left: 10%;
+    padding: 1rem;
+}
+.two .bottom h5{
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+    font-weight: none;
+}
+.two .bottom img{
+    height: 15rem;
+
+}
+
+/* SECTION THREE CSS */
+.three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 0;
+}
+.three .left1 i{
+    color:  rebeccapurple;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    
+}
+.three .left1 h4{
+    font-size: 1.7rem;
+    padding-top: 1.3rem;
+    padding-right: 2rem;
+
+}
+.three .left1 p{
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+}
+.three .left1 b{
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    font-size: 0.8rem;
+}
+.three .left{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 3rem;
+    width: 75%;
+    padding: 1.5rem;
+    border: 1px solid  #ecc3da;
+    background: #ecc3da;
+}
+.three .left:hover{
+    cursor: pointer;
+    background: royalblue;
+}
+
+.three .left button{
+    margin-top: 2.9vh;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: white;
+    font-weight: none;
+    font-size: 0.9rem;
+    width: 50%;
+    border: none;
+}
+
+.three .right1{
+    padding-top: 5rem;
+}
+.three img{
+    height: 9rem;
+}
+.three .right{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 75%;
+    padding: 1.7rem;
+    border: 1px solid  #ecc3da;
+    background: #ecc3da;
+
+}
+.three .right:hover{
+    cursor: pointer;
+    background: royalblue;
+    pointer-events: none;
+}
+
+.three .right button{
+    margin-top: 2.9vh;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: white;
+    font-weight: none;
+    font-size: 0.9rem;
+    width: 50%;
+    border: none;
+}
+
+/* SECTION FOUR CSS */
+.four{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ecc3da;
+    background: #ecc3da;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.four .left .pic{
+    margin: 0 10%;
+    align-items: center;
+    padding-top: 10%;
+
+}
+.four .left .pic .small:hover{
+    cursor: pointer;
+    background-color: rgb(242, 198, 131);
+    pointer-events: none;
+}
+.four .left .pic .small{
+    width: 25%;
+    height: auto;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    background-color: white;
+    margin: 1.5rem 0;
+}
+.four .left .pic .big:hover{
+    cursor: pointer;
+    background-color: rgb(242, 198, 131);
+}
+.four .left .pic .big{
+    width: 70%;
+    height: auto;
+    border: 1px solid lightgray;
+    background: white;
+    border-radius: 20px;
+    margin-left: -0.9rem;
+    margin-top: -0.9rem;
+}
+.four .right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.four .right h3{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0.9rem;
+}
+.four .right h2{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+   
+}
+.four .right span{
+    color: rgb(238, 146, 8);
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+.four .right p{
+    font-size: 0.7rem;
+}
+.four .right ul li{
+    list-style: none;
+    display: flex;
+    margin-top: 0.5rem;
+   padding: 0.5rem 0;
+    align-items: center;
+}
+.four .right ul p{
+    font-weight: lighter;
+}
+.four .right ul img{
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+.four .right button{
+    margin-top: 2.5vh;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    border-radius: 50px;
+    background: white;
+    font-weight: none;
+    color: rgb(242, 198, 131);
+    border: none;
+    margin-bottom: 3rem;
+}
+.four .right button img{
+    height: 1rem;
+    margin-left: 3px;
+}
+.four .right button:hover{
+    cursor: pointer;
+    background: rgb(242, 198, 131);
+    color: white;
+    box-shadow: 1px 3px 3px 3px lightblue;
+    
+}
+.four .right div img{
+   height: 8rem;
+}
+.four .right div{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+/* SECTION FIVE CSS */
+.five{
+    padding: 1rem;
+    margin-top: 2vh;
+
+}                
+.five h2{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.five span{
+    color: rgb(238, 146, 8);
+    margin-right: 0.5rem;
+}
+.five span:hover{
+    cursor: pointer;
+    color: rgb(46, 104, 239);
+}
+.five p{
+   font-size: 0.5rem; 
+    text-align: center;
+    margin-top: 1rem;
+}
+.five ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    width: auto;
+    margin-top: 1.7rem;
+}
+.five ul li:hover{
+    cursor: pointer;
+    background-color: rgb(242, 198, 131);
+    color: rgb(46, 104, 239);
+}
+.five .five-five{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    margin-top: 2rem;
+    
+}
+.five-five .five1{
+    display: flex;
+    flex-direction: column;
+}
+.five-five .five1 .top{
+    display: flex;
+    justify-content: center;
+}
+.five .five-five .five1 .top img{
+    height: 9rem;
+    border: 1px solid rgb(221, 225, 134);
+    background-color: rgb(244, 217, 176);
+    padding: 1rem;
+    border-radius: 20px;
+}
+.five .five-five .five1 .top img:hover{
+    cursor: pointer;
+    background-color: rgb(46, 104, 239);
+}
+.five-five .five1 .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.five-five .five1 .bottom h4{
+    text-align: center;
+    font-size: 0.7rem;
+    color: blue;
+    font-weight: lighter;
+}
+.five-five .five1 .bottom p:hover{
+    color: rgb(244, 217, 176);
+}
+.five-five .five1 .bottom span{
+    color: rgb(46, 104, 239);
+}
+.five-five .five1 .bottom p{
+    color: #064cf0;
+}
+
+.five .five-five .five1 .bottom img{
+    width: 40%;
+}
+
+/* SECTION SIX CSS */
+.six{
+    padding: 1rem;
+    width: 80%;
+    background-color: #ecc3da;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+}
+
+.six .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.six .left h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.six .left h1:hover{
+    cursor: pointer;
+    color: rgb(242, 198, 131);
+}
+.six .left h3{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-weight: lighter;
+
+}
+.six .left button{
+    margin-top: 2.9vh;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: white;
+    font-weight: none;
+    font-size: 0.9rem;
+    width: 50%;
+    border: none;
+
+}
+.six .left button:hover{
+    cursor: pointer;
+    box-shadow: 2px lightblue;
+    background:  rgb(242, 198, 131);
+    outline: none;
+}
+.six .left button img{
+    height: 1.8rem;
+    margin-left: 0.5rem;
+    pointer-events: none;
+}
+.six .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+
+}
+.six .right img{
+    height: 30rem;
+}
+
+/* SECTION SEVEN CSS */
+.seven{
+    padding: 1rem;
+    background-color: #ecc3da;
+    /* margin: 4rem 0; */
+    margin-top: 2vh;
+}
+.seven .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.seven .header span{
+    color: rgb(238, 146, 8);
+    margin-top: 0.5rem;
+}
+
+.seven .header p{
+    text-align: center;
+    margin-top: 0.8 rem;
+    font-size: 0.8rem;
+}
+.seven .reviews .review{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+ 
+}
+.seven .review{
+    margin: 2rem 1rem;
+    border: 1px solid white;
+    background: white;
+    border-radius: 10px;
+}
+.seven .review:hover{
+    cursor: pointer;
+    background:  rgb(242, 198, 131);
+}
+.seven .reviews .rrr{
+    width: 80%;
+}
+.seven .reviews .pushpa{
+    width: 80%;
+    margin-left: 20%;
+}
+.seven .reviews .liger{
+    width: 80%;
+}
+.seven .reviews .review .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.seven .reviews .review .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 0.5rem;
+    
+}
+.seven .reviews .review .left img{
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+.seven .reviews .review .right img{
+    height: 1.3rem;
+   
+}
+.seven .reviews .review .right p{
+    font-size: 0.7rem;
+   
+}
+
+/* SECTION EIGHT CSS */
+.eight{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.eight h3{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+}
+.eight h3:hover{
+    color:  rgb(242, 198, 131);
+}
+.eight .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+    border: 1px solid #ecc3da;
+    width: 50%;
+    padding: 0.7rem 0.2rem ;
+    background-color: #ecc3da;
+    margin-left: 25%;
+}
+.eight .top:hover{
+    cursor: pointer;
+    background-color: rgb(242, 198, 131);
+}
+.eight .top p{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+}
+.eight .top img{
+    height: 10rem;
+    width: 10rem;
+
+}
+.eight .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15vh;
+    width: 65%;
+    border: 1px solid #ecc3da;;
+    background: #ecc3da;
+    margin-left: 18%;
+}
+.eight h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+    text-align: center;
+}
+.eight .bottom  h3{
+    font-weight: lighter;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.eight .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eight .bottom img{
+    height: 10rem;
+    width: 10rem;
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    gap: 1rem;
+   
+}
+.eight .bottom img:hover{
+    cursor: pointer;
+    background: rgb(242, 198, 131);
+}
+
+/* SECTION NINE CSS */
+.nine{
+    padding: 1rem;
+}
+.nine .maha{
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+.nine img{
+    height: 100%;
+    width: 100%;
+}
+.bottoms span{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0.7rem 0;
+}
+.bottoms  .special span h3{
+    font-size: 1.2rem;
+    margin-left: rem;
+    color: rgb(46, 104, 239);
+}
+.nine .bottoms span img{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-top: 0.3rem;
+}
+.nine .special p{
+    font-size: 0.5rem;
+    justify-content: center;
+
+}
+.nine .special .serch img{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+.nine .special .serch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(242, 198, 131);
+    background: rgb(242, 198, 131);
+    width: 40%;
+    border-radius: 10px;
+    padding: 2px;
+    margin-top: 0.5rem;
+}
+.nine .special .serch:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 2px 2px lightgrey;
+}
+.nine .special input{
+    border: none;
+    outline: none;
+    background: rgb(242, 198, 131);
+    width: 100%;
+}
+.nine .features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+   
+}
+.nine .feature ul li h4{
+    font-size:2rem;
+}
+.nine .Feature ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 0.6rem;
+    margin: 0.5rem ;
+
+}
+.nine .Feature ul li:hover{
+    cursor: pointer;
+    color: #064cf0;
+}
+
+.nine .box{
+    height: 2rem;
+    width: 100%;
+    border: 1px solid #ecc3da;
+    background: #ecc3da;
+    margin-bottom: 1rem;
+}
+
+/* SECTION TEN CSS */
+.ten header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+} 
+            
+.ten header span{
+    display: flex;
+    margin-top: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+.ten header h3{
+    font-size: 1.7rem;
+    margin-left: 0.7rem;
+    color: rgb(46, 104, 239);
+}
+.ten header span img{
+    height: 1.7rem;
+}
+.ten header .serch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(242, 198, 131);
+    background: rgb(242, 198, 131);
+    width: 65%;
+    border-radius: 10px;
+    padding: 2.5px;
+    margin-top: 3vh;
+             
+}
+.ten header input{
+    display: flex;
+    border: none;
+    outline: none;
+    background: rgb(242, 198, 131);
+}
+.ten header .serch:hover{
+    box-shadow: 2px 4px 4px 2px lightgray;
+    cursor: pointer;
+}
+.ten header .serch img{
+    height: 1.3rem;  
+}
+.ten header ul{
+    list-style: none;
+    margin-top: 4vh;
+    display: flex;
+}
+.ten header ul{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.ten header ul li:hover{
+    cursor: pointer;
+    color: rgb(46, 104, 239);
+    background-color: rgb(242, 198, 131);
+} 
+
+.ten .left{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 0.5rem;
+    margin: 1rem;
+
+}
+.ten .left .left1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.ten .left .left1 img{
+    height: 5rem;
+    width: 5rem;
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(244, 217, 176);
+}
+.ten .left .left1 img:hover{
+    cursor: pointer;
+    background-color: #064cf0;
+}
+.ten .left .right1 img{
+    height: 28rem;
+    width: 30rem;
+}
+.ten .right .left h1{
+    font-size: 1rem;
+}
+.ten .right .top p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+.ten .right .top span{
+    color: blue;
+}
+.ten .right .top span b{
+    text-decoration: line-through;
+    color: black;
+    margin-right: 1rem; 
+}
+
+.ten .right .top{
+    margin: 1rem;
+}
+.ten .right .bottom{
+    margin: 1rem;
+}
+.ten .right .bottom p{
+    font-weight: none;
+    font-size: 0.8rem;
+}
+.ten .right .bottom ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.ten .right .bottom ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.ten .right .bottom li img{
+    height: 1.8rem;
+    margin-right: 0.5rem;
+}
+.ten .right .bottom li p{
+    font-size: 0.8rem;
+}
+.ten .right .bottom li p:hover{
+    font-size: 1rem;
+}
+.ten .right .bottom h3{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.ten .right .bottom .box{
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.ten .right .bottom .color{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box1{
+    background: red;
+}
+.box2{
+    background: blue;
+}
+.box3{
+    background: green;
+}
+.box4{
+    background: pink;
+}
+.box5{
+    background: yellow;
+}
+.box6{
+    background: black;
+}
+.box7{
+    background: orange;
+}
+
+/* SECTION ELEVEN CSS */
+.eleven header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3vh;
+}
+                            
+.eleven header span{
+    display: flex;
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+.eleven header h3{
+    font-size: 1.7rem;
+    margin-left: 0.7rem;
+    color: rgb(46, 104, 239);
+}
+.eleven header span img{
+    height: 1.7rem;
+}
+.eleven header .serch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(242, 198, 131);
+    background: rgb(242, 198, 131);
+    width: 65%;
+    border-radius: 10px;
+    padding: 2.5px;
+    margin-top: 3vh;
+                             
+}
+.eleven header input{
+    display: flex;
+    border: none;
+    outline: none;
+    background: rgb(242, 198, 131);
+}
+.eleven header .serch:hover{
+    box-shadow: 2px 4px 4px 2px lightgray;
+    cursor: pointer;
+}
+.eleven header .serch img{
+    height: 1.3rem;  
+}
+.eleven header ul{
+    list-style: none;
+    margin-top: 4vh;
+    display: flex;
+}
+.eleven header ul{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.eleven header ul li:hover{
+    cursor: pointer;
+    color: rgb(46, 104, 239);
+    background-color: rgb(242, 198, 131);
+} 
+                
+.eleven .left{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 0.5rem;
+    margin: 1rem;
+                
+}
+.eleven .left .left1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+                
+}
+.eleven .left .left1 img{
+    height: 5rem;
+    width: 5rem;
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(244, 217, 176);
+}
+.eleven .left .left1 img:hover{
+    cursor: pointer;
+    background-color: #064cf0;
+}
+.eleven .left .right1 img{
+    height: 24rem;
+    width: 20rem;
+}
+.eleven .right h3{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.eleven .right .box{
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.eleven .right .color{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box1{
+    background: red;
+}
+.box2{
+    background: blue;
+}
+.box3{
+    background: green;
+}
+.box4{
+    background: pink;
+}
+.box5{
+    background: yellow;
+}
+.box6{
+    background: black;
+}
+.box7{
+    background: orange;
+}
+.eleven .right ul li{
+    display: flex;
+    list-style: none;
+    margin: 1rem;
+    align-items: center;
+}
+.eleven .right li b{
+    font-size: 0.9rem;
+    text-align: center;
+}
+.eleven .right li p{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* SECTION TWELVE CSS */
+.twelve header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3vh;
+ }
+
+
+                                            
+.twelve header span{
+    display: flex;
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
+ }
+.twelve header h3{
+    font-size: 1.7rem;
+    margin-left: 0.7rem;
+    color: rgb(46, 104, 239);
+}
+.twelve header span img{
+    height: 1.7rem;
+}
+.twelve header .serch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(242, 198, 131);
+    background: rgb(242, 198, 131);
+    width: 65%;
+    border-radius: 10px;
+    padding: 2.5px;
+    margin-top: 3vh;
+                                             
+}
+.twelve header input{
+    display: flex;
+    border: none;
+    outline: none;
+    background: rgb(242, 198, 131);
+}
+.twelve header .serch:hover{
+    box-shadow: 2px 4px 4px 2px lightgray;
+    cursor: pointer;
+}
+.twelve header .serch img{
+    height: 1.3rem;  
+}
+.twelve header ul{
+    list-style: none;
+    margin-top: 4vh;
+    display: flex;
+}
+.twelve header ul{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.twelve header ul li:hover{
+    cursor: pointer;
+    color: rgb(46, 104, 239);
+    background-color: rgb(242, 198, 131);
+} 
+                                
+.twelve .left{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 0.5rem;
+    margin: 1rem;
+                                
+}
+.twelve .left .left1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+                
+}
+.twelve .left .left1 img{
+    height: 5rem;
+    width: 5rem;
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(244, 217, 176);
+}
+.twelve .left .left1 img:hover{
+    cursor: pointer;
+    background-color: #064cf0;
+}
+.twelve .left .right1 img{
+    height: 25rem;
+    width: 34rem;
+}
+.twelve .right h1{
+    margin: 1rem;
+    font-size: 1rem;
+}
+.twelve .right ul li{
+    display: flex;
+    list-style: none;
+    margin: 1rem;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+/* SECTION THERTEEN CSS */
+.therteen{
+    margin-top: 3vh
+}
+.therteen h2{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.therteen .left table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+.therteen .left table,tr,td{
+    text-align: center;
+    font-size: 0.5rem;
+}
+.therteen .left table{
+    margin-bottom: 2rem;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+}
+.therteen .right table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+.therteen .right table,tr,td{
+    text-align: center;
+    font-size: 0.5rem;
+}
+.therteen .right table{
+    margin-bottom: 2rem;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/* SECTION FORTEEN CSS */
+.forteen{
+    margin-top: 2vh;
+}
+.forteen h2{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+.forteen .more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.forteen .mark .top img{
+    height: 15rem;
+    width: 15rem;
+    padding: 1rem;
+    border: 1px solid rgb(244, 217, 176);
+    background-color: rgb(244, 217, 176);
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.forteen .mark .top img:hover{
+    cursor: pointer;
+    background-color: #064cf0;
+}
+.forteen .mark .top p{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.forteen .mark{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.forteen .mark button{
+    margin-top: 2.5vh;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: rgb(242, 198, 131);
+    border: none;
+    font-weight: none;
+    color: white;
+
+}
+.forteen .mark button img{
+    height: 1rem;
+    margin-left: 3px;
+}
+.forteen .mark button:hover{
+    box-shadow: 1px 2px 2px 2px lightgray;
+    cursor: pointer;
+    background-color: royalblue;
+}      
+
+/* SECTION FIFTEEN CSS */
+.fifteen{
+    margin-top: 2vh;
+}
+
+.fifteen table,td img{
+    height: 0.5rem;
+    width: auto;
+   
+}
+.fifteen table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.fifteen table{
+    margin-bottom: 2rem;
+    height: 80%;
+    width: 80%;  
+   
+}
+
+/* SECTION SIXTEEN CSS */
+.sixteen .left ul .box19{
+    height: 1rem;
+    width: 70%;
+    border-radius: 50px;
+    display: flex;
+    margin-left: 2%;
+   
+}
+.box19 .box20{
+    height: 1rem;
+    width: 8rem;
+    background-color: blue;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.box19 .box30{
+    height: 1rem;
+    width: 2rem;
+    background-color: wheat;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.box19 .box21{
+    height: 1rem ;
+    width: 9rem;
+    background-color: blue;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.box19 .box31{
+    height: 1rem;
+    width: 1rem;
+    background-color: wheat;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.box19 .box22{
+    height: 1rem ;
+    width: 6rem;
+    background-color: blue;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.box19 .box32{
+    height: 1rem;
+    width: 4rem;
+    background-color: wheat;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.box19 .box23{
+    height: 1rem ;
+    width: 5rem;
+    background-color: blue;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.box19 .box33{
+    height: 1rem;
+    width: 5rem;
+    background-color: wheat;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.box19 .box24{
+    height: 1rem ;
+    width: 2rem;
+    background-color: blue;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.box19 .box34{
+    height: 1rem;
+    width: 8rem;
+    background-color: wheat;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.sixteen .left ul li{
+    display: flex;
+    margin: 0.7rem ;
+}
+.sixteen .left p{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+.sixteen .left ul{
+    margin-bottom: 2rem;
+    
+}
+.sixteen h3{
+    margin-top: rem ;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+.sixteen .left img{
+    height: 2rem;
+    margin-left: 1rem;
+}
+.sixteen .left h5{
+    margin-left: 1rem;
+}
+
+
+
+
+.sixteen .reviews{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.sixteen .reviews .raja{
+    width: 100%;
+}
+.sixteen .reviews .rani{
+    width: 100%;
+}
+.sixteen .reviews .review{
+    display: flex;
+    flex-direction: row;
+  
+    align-items: flex-start;
+ 
+}
+.sixteen .reviews .review{
+    margin:  1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.sixteen .reviews .review .left img{
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+.sixteen .reviews .review .right img{
+    height: 0.5rem;
+   
+}
+.sixteen .reviews .review .right p{
+    font-size: 0.5rem;
+}
+
+.seventeen {
+    font-size: 1rem;
+    height: 5vh;
+    font-weight: bolder;
+    background-color: #c2ce9c;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOR TABLETS/IPAD DEVICES */
+@media screen and (min-width: 750px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 2vh;
+        pointer-events: none;
+    } 
+
+    header span{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header h3{
+        font-size: 1.8rem;
+        margin-left: 0.5rem;
+        color:  rgb(46, 104, 239);
+    }
+    header span img{
+        height: 1.8rem;
+    }
+    header .serch{
+        margin-left: 3rem;
+        width: 50%;
+    }
+    header .serch:hover{
+        box-shadow: 1px 3px 3px 2px lightblue;
+        cursor: pointer;
+        
+    }
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 3rem;
+    }
+    header ul li{
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    header ul li:hover{
+        cursor: pointer;
+        color: rgb(46, 104, 239);
+        background-color: rgb(242, 198, 131);
+    }
+    .one{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 90vh;
+        pointer-events: none;
+    }
+
+    /* SECTION ONE CSS */
+    .one .left{
+        margin-top: 10vh;
+    }
+    .one .left i{
+        margin-top: 5vh;
+    }
+    .one .left h3{
+        margin-top: 5vh;
+    }
+    .one .left h1{
+        margin-top: 3vh;
+        font-size: 3rem;
+    }
+    .one .left p{
+        margin-top: 2vh;
+    }
+    .one .left ul{
+        margin-top: 2vh;
+        display: flex;
+        align-items: center;
+    }
+    .one .left button{
+        margin-top: 4vh;
+    }
+    .one .right{
+        display: flex;
+        margin-top: -8%;
+       
+    }
+    .one .right div{
+        height: 500px;
+        width:500px;
+    }
+
+
+    /* SECTION TWO CSS */
+    .two{
+        height: 100vh;
+        pointer-events: none;
+    }
+    .two .top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40vh;
+        width: 90%;
+    }
+    .two .top h1{
+        font-size: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+
+    }
+    .two .top span img{
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+
+    }
+    .two .top ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        margin: 0;
+        padding-right: 3rem;
+    }
+    .two .top li img{
+        height: 25vh;
+    }
+    .two .top ul li{
+        margin-right: 3rem;
+        justify-self: space-around;
+    }
+    .two .bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 40vh;
+        margin-top: 5%;
+        padding-right: 1rem;
+        padding-right: 1rem;
+    }
+    .two .bottom img{
+        height: 30vh;
+    }
+    .two .bottom  h5{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    /* SECTION THREE CSS */
+    .three{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .three .left{
+        width: 40%;
+        margin-top: 1.5rem;
+    }
+    .three img{
+        height: 9rem;
+    }
+    .three .right{
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+
+    /* SECTION FOUR CSS */
+    .four{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        flex-direction: row;
+        justify-content: center;
+        height: 100vh;
+        pointer-events: none;
+    }
+    .four .left .pic .small{
+        height: 7rem;
+
+    }
+    .four .left .pic .big{
+        height: 15rem;
+        padding: rem;
+    }
+    .four .left{
+        margin-left: 10rem;
+        margin-bottom: 4rem;
+    }
+    .four .right h3{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+    .four .right h2{
+        display: flex;
+        flex-direction: row;
+        font-size: 2.2rem;
+        
+    }
+    .four .right span{
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+    .four .right p{
+        font-size: 0.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .four .right ul p{
+        font-size: 1.2rem;
+    }
+    .four .right button{
+        width: 30%;
+        margin-left: 1rem;
+    }
+    .four .right div img{
+        height: 10rem;
+    }
+    .four .left .pic .small:hover{
+        cursor: pointer;
+        background-color: rgb(242, 198, 131);
+        pointer-events: none;
+    }
+
+    /* SECTION FIVE CSS */
+    .five .five-five{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        gap: 1rem;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;        
+    }
+    .five-five .five1 .bottom p{
+        font-size: 0.8rem;
+    }
+    .five-five .five1 .bottom h4{
+        font-size: 1rem;
+    }
+
+    .five h2{
+        font-size: 2rem;
+    }
+    .five p{
+        font-size: 0.7rem;
+    }
+    .five .five-five .five1 .top img{
+        height: 7rem;
+    }
+    
+
+    /* SECTION SIX CSS */
+    .six{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 85%;
+        margin-left: 3.8rem;
+
+    }
+    .six .left{
+        margin-right: 1rem;
+    }
+    .six .left h1{
+        font-size: 1.8rem;
+    }
+    .six .left h3{
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    .six .right img{
+        height: 14rem;
+
+    }
+    .six .left button{
+        width: 80%;
+        padding: 0;
+    }
+
+    /* SECTION SEVEN CSS */
+    .seven .reviews{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .seven .reviews .rrr{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 1rem;
+
+    }
+    .seven .reviews .pushpa{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        margin-right: 4rem;
+    }
+    .seven .reviews .liger{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .seven .reviews .rrr .right p{
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .seven .reviews .pushpa .right p{
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+    .seven .reviews .liger .right p{
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    /* SECTION EIGHT CSS */
+    .eight .left  h3{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .eight .tops{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+    }
+    .eight .top img{
+        height: 8rem;
+        width: 8rem;
+    }
+    .eight .bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        margin-left: 10%;
+ 
+    }
+    .eight .bottom h2{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10rem;
+    }
+    .eight .bottom h3{
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10rem;
+    }
+    .eight .bottom img{
+        height: 7rem;
+        width: 7rem;
+    }
+
+    /* SECTION NINE CSS */
+    .nine .maha{
+        margin-left: 13%;
+    }
+    .nine .bottoms h2{
+        font-size: 3rem;
+
+    }
+    .nine .bottoms{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nine .bottoms .special .serch{
+        width: 80%;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .nine .Feature ul li{
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        width: auto;
+        display: flex;  
+        justify-content: flex-start; 
+        margin: 1rem;
+    } 
+    .nine .bottoms{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        align-items: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    
+    }
+    .nine .bottoms .special p{
+        width: 50%;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    .nine .bottoms ul li{
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+       
+    }
+
+    /* SECTION TEN CSS */
+    .ten header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 5vh;
+        pointer-events: none;
+    } 
+    .ten header span{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .ten header h3{
+        font-size: 1.8rem;
+        margin-left: 0.5rem;
+        color:  rgb(46, 104, 239);
+    }
+    .ten header span img{
+        height: 1.8rem;
+    }
+    .ten header .serch{
+        margin-left: 3rem;
+        width: 50%;
+    }
+    .ten header .serch:hover{
+        box-shadow: 1px 3px 3px 2px lightblue;
+        cursor: pointer;
+        
+    }
+    .ten header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 3rem;
+    }
+    .ten header ul li{
+        font-size: 0.9rem;
+    }
+    .ten header ul li:hover{
+        cursor: pointer;
+        color: rgb(46, 104, 239);
+        background-color: rgb(242, 198, 131);
+    }
+    .ten .position{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    /* SECTION ELEVEN CSS */
+    .eleven header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 5vh;
+        pointer-events: none;
+    } 
+    .eleven header span{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .eleven header h3{
+        font-size: 1.8rem;
+        margin-left: 0.5rem;
+        color:  rgb(46, 104, 239);
+    }
+    .eleven header span img{
+        height: 1.8rem;
+    }
+    .eleven header .serch{
+        margin-left: 3rem;
+        width: 50%;
+    }
+    .eleven header .serch:hover{
+        box-shadow: 1px 3px 3px 2px lightblue;
+        cursor: pointer;
+        
+    }
+    .eleven header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 3rem;
+    }
+    .eleven header ul li{
+        font-size: 0.9rem;
+    }
+    .eleven header ul li:hover{
+        cursor: pointer;
+        color: rgb(46, 104, 239);
+        background-color: rgb(242, 198, 131);
+    }
+    .eleven .position{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    /* SECTION TWELVE CSS */
+    .twelve header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 5vh;
+        pointer-events: none;
+    } 
+    .twelve header span{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .twelve header h3{
+        font-size: 1.8rem;
+        margin-left: 0.5rem;
+        color:  rgb(46, 104, 239);
+    }
+    .twelve header span img{
+        height: 1.8rem;
+    }
+    .twelve header .serch{
+        margin-left: 3rem;
+        width: 50%;
+    }
+    .twelve header .serch:hover{
+        box-shadow: 1px 3px 3px 2px lightblue;
+        cursor: pointer;
+        
+    }
+    .twelve header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 3rem;
+    }
+    .twelve header ul li{
+        font-size: 0.9rem;
+    }
+    .twelve header ul li:hover{
+        cursor: pointer;
+        color: rgb(46, 104, 239);
+        background-color: rgb(242, 198, 131);
+    }
+    .twelve .position{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .twelve .right h1{
+        font-size: 1.8rem;
+    }
+    .twelve .right ul li{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* SECTION THERTEEN CSS */
+    .therteen{
+        margin: 5vh 0;
+    }
+    .therteen h2{
+        font-size: 1.8rem;
+    }
+    .therteen .position{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+    .therteen .left table,tr,td{
+        text-align: center;
+       
+    }
+    .therteen .left{
+        width: 100%;
+        height: 100%;
+    }
+    .therteen .right{
+        width: 100%;
+        width: 100%;
+    }
+    .therteen .left table,th,td{
+        padding: 0.5rem;
+    }
+
+    /* SECTION FORTEEN CSS */
+    .forteen{
+        margin: 5vh 0;
+    }
+    .forteen .more{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .forteen .mark{
+        justify-content: center;
+        align-items: center;
+    }
+    .forteen .mark .top p{
+        font-size: 0.6rem; 
+    }
+    .forteen .mark .top img{
+        height: 9rem;
+        width: 9rem;
+        padding: 1rem;
+    }
+
+    /* SECTION FIFTEEN CSS */
+    .fifteen table{
+        width: 70%;
+        height: auto;
+        
+       
+    }
+    .fifteen{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5vh 0;
+
+    }
+
+
+    .fifteen table,th,td{
+        font-size: 0.8rem;
+    }
+
+    /* SECTION SIXTEEN CSS */
+    .sixteen{
+        display: grid;
+        grid-template-columns: 34% 66%;
+        width: 90%;
+        margin:5% 5%;
+    }
+    .sixteen .left h3{
+        font-size: 1.3rem;
+    }
+    .sixteen .right .reviews{
+        display:grid;
+        grid-template-columns: 50% auto;
+    }
+    .sixteen .right .order .left1{
+        margin: 5%;
+    }
+    .sixteen .right .order .right1{
+        margin: 5%;
+    }
+    .sixteen .reviews .review .left img{
+        height: 3.5rem;
+    }
+    .sixteen  .reviews .review .right p{
+        font-size: 0.9rem;
+    }
+    .sixteen  .reviews .review .right img{
+        height: 1.5rem;
+    }
+
+    .seventeen {
+        font-size: 1.5rem;
+    }
+}
+
+/* FOR LAPTOP/DESKTOP DEVICES */
+@media screen and(min-width: 1250px){
+    
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 5vh;
+        pointer-events: none;
+    } 
+    header span{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header h3{
+        font-size: 2rem;
+        margin-left: 0.5rem;
+        color:  rgb(46, 104, 239);
+    }
+    header span img{
+        height: 2rem;
+    }
+    header .serch{
+        margin-left: 7rem;
+        width: 50%;
+    }
+    header .serch:hover{
+        box-shadow: 1px 3px 3px 2px lightblue;
+        cursor: pointer;
+        
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 7rem;
+       
+    }
+    header ul li{
+        font-size: 1rem;
+    }
+    header ul li:hover{
+        cursor: pointer;
+        color: rgb(46, 104, 239);
+        background-color: rgb(242, 198, 131);
+    }
+
+    /* SECTION ONE CSS */
+    .one{
+        display: grid;
+        grid-template-columns: 70% 30%; 
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        pointer-events: none;
+    }
+    .one .left{
+        margin-top: 10vh;
+    }
+    .one .left i{
+        margin-top: 5vh;
+    }
+    .one .left h3{
+        margin-top: 5vh;
+    }
+    .one .left h1{
+        margin-top: 3vh;
+        font-size: 3rem;
+    }
+    .one .left p{
+        margin-top: 2vh;
+    }
+    .one .left ul{
+        margin-top: 2vh;
+        display: flex;
+        align-items: center;
+    }
+    .one .left button{
+        margin-top: 4vh;
+    }
+    .one .right{
+        display: flex;
+        margin-top: -8%;
+       
+    }
+    .one .right div{
+        height: 600px;
+        width: 600px;
+    }
+
+    /* SECTION TWO CSS */
+    .two{
+        height: 100vh;
+        pointer-events: none;
+    }
+    .two .top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40vh;
+        width: 90%;
+    }
+    .two .top h1{
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        text-align: center;
+
+    }
+    .two .top span img{
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+
+    }
+    .two .top ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0;
+        padding-right: 3rem;
+    }
+    .two .top li img{
+        height: 28vh;
+    }
+    .two .top ul li{
+        margin-right: 3rem;
+        justify-self: space-around;
+    }
+    .two .bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 40vh;
+        margin-top: 5%;
+        padding-right: 1rem;
+        padding-right: 1rem;
+    }
+    .two .bottom img{
+        height: 30vh;
+    }
+    .two .bottom  h5{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    /* SECTION THREE CSS */
+    .three {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 5rem;
+        pointer-events: none;
+       
+    }
+    .three img{
+        height: 25vh;
+    }
+    .three .right{
+        width: 30%;
+        height: 45%;
+    }
+    .three .left{
+        width: 30%;
+        height: 45%;
+        margin-top: 3rem;
+    }
+
+    /* SECTION FOUR CSS */
+    .four{
+        display: flex;
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        height: 100vh;
+        pointer-events: none;
+    }
+    .four .left .pic .small{
+        height: 20%;
+    }
+    .four .left .pic .big{
+        height: 15rem;
+        padding: rem;
+    }
+    .four .left{
+        margin-left: 10rem;
+        margin-bottom: 4rem;
+    }
+    .four .right h3{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+    .four .right h2{
+        display: flex;
+        flex-direction: row;
+        font-size: 2.2rem;
+        
+    }
+    .four .right span{
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+    .four .right p{
+        font-size: 0.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .four .right ul p{
+        font-size: 1.2rem;
+    }
+    .four .right button{
+        width: 25%;
+        margin-left: 1rem;
+    }
+    .four .right div img{
+        height: 15rem;
+    }
+    .four .left .pic .small:hover{
+        cursor: pointer;
+        background-color: rgb(242, 198, 131);
+        pointer-events: none;
+    }
+
+    /* SECTION FIVE CSS */
+    .five{
+        height: 100vh;
+    }
+    .five h2{
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    .five span{
+        margin-right: 1rem;
+    }
+    .five p{
+        text-align: center;
+       font-size: 1rem;
+    }
+    .five ul li{
+        font-size: 1.1rem;
+    }
+    .five .five-five .five1 .top img{
+        height: 10rem;
+    }
+
+    /* SECTION SIX CSS */
+    .six{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        margin-top: 20rem;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .six .left h1{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .six .left h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .six .left button{
+        width: 80%;
+        align-items: center;
+    }
+    .six .right img{
+        height: 17rem;
+    } 
+
+    /* SECTION SEVEN CSS */
+    .seven{
+        height: 100vh;
+        padding-bottom: 2.5rem ;
+      
+    }
+    .seven .header h1{
+        font-size: 2.9rem;
+        font-weight: none;
+    }
+    .seven .header p{
+        font-size: 1.2rem;
+    }
+    .seven .reviews{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 1rem;
+      
+
+      
+    }
+    .seven .review{
+        padding: 1rem;
+    }
+    .seven .review .left img{
+        height: 5rem;
+    }
+    .seven .reviews .rrr{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 1rem;
+
+    }
+    .seven .reviews .pushpa{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        margin-right: 10rem;
+    }
+    .seven .reviews .liger{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+
+    }
+    .seven .reviews .rrr .right p{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    .seven .reviews .pushpa .right p{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    .seven .reviews .liger .right p{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    /* SECTION EIGHT CSS */
+    .eight{
+        padding: 1rem;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-left: 10%;
+        height: 100vh;
+        
+    }
+    .eight h3{
+        font-size: 1.7rem;
+    }
+    .eight .tops{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20rem;
+    }
+    .eight .top img{
+        height: 12rem;
+        width: 12rem;
+
+    }
+    .eight .bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        margin-left: 10%;
+        padding: 0;
+    
+        margin-bottom: 3rem;
+    }
+    .eight .bottom h2{
+        font-size: 2rem;
+
+    }
+    .eight .bottom h3{
+        font-size: 1.2rem;
+    }
+    .eight .bottom img{
+        height: 9rem;
+        width: 9rem;
+        margin: 3.5rem;
+    }
+
+    /* SECTION NINE CSS */
+    .nine{
+        margin: 3rem;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        width: 85%;
+        height: 200vh;
+        margin-left: 10%;
+    }
+    .nine img{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nine .box{
+        height: 7rem;
+        width: 100%;
+    }
+    .nine .special h3{
+        margin-bottom: 1rem;
+    }
+    .nine .special img{
+        margin-bottom: 1rem;
+    } 
+    .nine .special p{
+        font-size: 0.7rem;
+        margin-left: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+
+    }
+    .nine .bottoms .special .serch{
+        width: 60%;
+        padding-top: 0.5rem;
+        height: 1.8rem;
+    }
+    .nine .bottom .special .serch img{
+        height: 1.5rem ;
+        margin-top: 1rem;
+    }
+
+    /* SECTION TEN CSS */
+    .ten{
+        height: 100vh;
+
+    }
+    .ten .header{
+        width: 100%;
+        justify-content: center;
+
+    }
+    .ten .serch{
+        width: 40%;
+    }
+    .ten .position{
+        margin-top: 3%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+    .ten .left .left1 img{
+        height: 4rem;
+        width: 4rem;
+    }
+    .ten .left .right1 img{
+        height: 25rem;
+        width: 25rem;
+    }
+    .ten .right .bottom ul li{
+        width: 100%;
+       margin-left: -2rem;
+    }
+    .ten .right .bottom ul{
+        justify-content: space-between;
+    }
+    .ten .right .bottom ul li p{
+        font-size: 0.9rem;
+    }
+    .ten .position{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .ten .right .top h1{
+        font-size: 2rem;
+    }
+    .ten .right .top p{
+        font-size: medium;
+    }
+    .ten .right .bottom ul li img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    /* SECTION ELEVEN CSS */
+    .eleven{
+        height: 100vh;
+    }
+    .eleven .position{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+
+    .eleven .left .left1 img{
+        height: 4rem;
+        width: 4rem;
+    }
+    .eleven .left .right1 img{
+        height: 25rem;
+        width: 25rem;
+    }
+    .eleven .right h3{
+        font-size: 2.5rem;
+    }
+    .eleven .right ul li p{
+        font-size: 1rem;
+
+    }
+    .eleven .right ul li b{
+        font-size: 1rem;
+    }
+    .eleven .right{
+        margin-left: -2rem;
+    }
+
+    /* SECTION TWELVE CSS */
+    .twelve{
+        height: 100vh;
+    }
+
+    .twelve .position{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .twelve .left .left1 img{
+        height: 4rem;
+        width: 4rem;
+    }
+    .twelve .left .right1 img{
+        height: 25rem;
+        width: 25rem;
+    }
+    .twelve .right h1{
+        font-size: 2.2rem;
+    }
+    .twelve .right{
+        margin-left: -2rem;
+    }
+    .twelve .right ul li{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: lighter;
+    }
+
+    /* SECTION THERTEEN CSS */
+    .therteen h2{
+        font-size: 1.9rem;
+        margin-left: 5%;
+    }
+    .therteen .position{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+    .therteen .left table,tr,td{
+        font-size: 0.5rem;
+    }
+    .therteen .left{
+        width: 100%;
+    }
+    .therteen .right{
+        width: 100%;
+    }
+
+    /* SECTION FORTEEN CSS */
+    .forteen{
+        height: 100vh;
+      
+    }
+    .forteen h2{
+        font-size: 1.9rem;
+        margin-left: 2rem;
+        margin-top: 5vh;
+    }
+    .forteen .more{
+        gap: 2.5rem;
+        margin-top: 8vh;
+    }
+    .forteen .more .mark .top img{
+        height: 12rem;
+        width: 12rem;
+        padding: 1rem;
+    }
+    .forteen .mark .top p{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        width: 80%;
+ 
+    }
+    .forteen .mark .bottom button{
+        width: 70%;
+    } 
+
+    /* SECTION FIFTEEN CSS */
+    .fifteen{
+        height: 100vh;
+    }
+    .fifteen table{
+        width: 80%;
+        height: auto; 
+    }
+    .fifteen{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .fifteen table,th,td{
+        font-size: 1rem;
+    }
+
+    .seventeen {
+        font-size: 1.5rem;
+    }
+}
